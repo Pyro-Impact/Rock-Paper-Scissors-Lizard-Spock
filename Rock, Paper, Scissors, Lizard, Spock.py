@@ -28,7 +28,7 @@ while True:
             "Paper": "slap",
             "Scissors": "scratch",
             "Spock": "shoot",
-            "Lizard": "hide from"}
+            "Lizard": "ignore"}
 
     def final_result():
         player_choice_t = players_choice.title()
@@ -42,8 +42,8 @@ while True:
             lose = f"{computer_choice} {verb_details[computer_choice]} {player_choice_t}. You lose."
             return lose
         else:
-            result = f"The {player_choice_t}(s) {draw[player_choice_t]} each other, and it's a draw."
-            return result
+            tie = f"The {player_choice_t}(s) {draw[player_choice_t]} each other, and it's a draw."
+            return tie
 
     print(final_result())
 
